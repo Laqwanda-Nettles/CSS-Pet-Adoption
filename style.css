@@ -2,3 +2,39 @@
   box-sizing: border-box;
   margin: 0;
 }
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+#company-name {
+  font-size: 25px;
+}
+.nav-container {
+  position: relative;
+  background-color: #81b29a;
+  display: block;
+  padding: 5px;
+}
+.nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 0%;
+  top: 0%;
+}
+.nav li {
+  margin: 10px;
+  list-style-type: none;
+}
+
+footer {
+  height: 40px;
+  background-color: #81b29a;
+  text-align: center;
+  padding: 10px;
+}
