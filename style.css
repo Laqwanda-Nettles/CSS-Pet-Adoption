@@ -13,7 +13,7 @@ svg {
 body {
   background-color: #f4f1de;
 }
-main {
+#landing-main {
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -86,6 +86,36 @@ ul {
 .img-column {
   gap: 50px;
   z-index: -1;
+}
+
+/*css for browse.html*/
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: #e07a5f 2px solid;
+  margin: 40px;
+}
+.gallery-row {
+  display: flex;
+  margin: 10px 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.gallery-row > div {
+  height: 350px;
+  width: 300px;
+  background-color: #fff;
+  gap: 10px;
+  flex: 0 0 300px;
+  border-radius: 10px;
+}
+.gallery-row > div > img {
+  width: 300px;
+  height: 250px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
 }
 
 footer {
