@@ -15,6 +15,9 @@ body {
 }
 main {
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #company-name {
