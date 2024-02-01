@@ -200,15 +200,12 @@ a > i:hover {
 }
 .sidebar {
   grid-area: sidebar;
-  background-color: salmon;
 }
 .main {
   grid-area: main;
-  background-color: #81b29a;
 }
 .footer {
   grid-area: footer;
-  background-color: skyblue;
 }
 
 .grid-container {
