@@ -130,6 +130,18 @@ nav a:hover {
   border-radius: 8px 8px 0 0;
   object-fit: cover;
 }
+.greetings {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 10px;
+  font-size: 20px;
+}
+.greetings span {
+  color: darkred;
+}
+.descriptions {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+}
 
 #landing-footer {
   font-size: 18px;
@@ -140,7 +152,8 @@ nav a:hover {
   color: #fefee3;
 }
 .footer-container {
-  background-color: #81b29a;
+  background-color: #2c6e49;
+  color: #fefee3;
   height: 200px;
   width: 100vw;
   display: flex;
@@ -152,17 +165,26 @@ nav a:hover {
   flex: 1 1 150px;
 }
 .footer-items {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
 }
-.services {
-  border-bottom: #3d405b 2px solid;
-  width: 150px;
-  margin-right: 20px;
-  margin-bottom: 5px;
+i {
+  font-size: 30px;
 }
+a > i {
+  color: #fefee3;
+}
+a > i:hover {
+  color: yellow;
+}
+
 .copyrights {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   height: 60px;
   width: 100vw;
