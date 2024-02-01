@@ -262,7 +262,6 @@ a > i:hover {
 .arrivals-container {
   display: flex;
   justify-content: space-evenly;
-  border: #801818 2px solid;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
