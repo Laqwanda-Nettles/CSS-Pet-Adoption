@@ -373,7 +373,7 @@ a > i:hover {
   }
   #company-name {
     font-size: 20px;
-    padding: auto;
+    margin: auto;
   }
 }
 @media (width < 400px) {
