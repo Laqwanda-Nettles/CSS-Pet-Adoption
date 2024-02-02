@@ -358,7 +358,7 @@ a > i:hover {
 @media (width < 500px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 80px 1fr auto 200px;
+    grid-template-rows: auto 1fr auto 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
@@ -368,23 +368,31 @@ a > i:hover {
   }
   .nav-container {
     height: 75px;
+    align-items: center;
     border-bottom: #fefee3 2px solid;
   }
   #company-name {
     font-size: 20px;
-    margin: auto;
+    padding: auto;
   }
 }
 @media (width < 400px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 80px 1fr auto 200px;
+    grid-template-rows: auto 1fr auto 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
       "sidebar"
       "main"
       "footer";
+  }
+  .nav-container {
+    height: 80px;
+  }
+  #company-name {
+    font-size: 18px;
+    padding: auto;
   }
   .footer {
     width: 100vw;
