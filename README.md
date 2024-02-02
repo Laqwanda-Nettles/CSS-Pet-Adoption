@@ -2,6 +2,24 @@
 
 ## Objectives
 
+Create the landing page for a Pet Adoption website. This project aims to reinforce your understanding of CSS fundamentals, including the Box Model, selectors, and styling. We will not be using frameworks like Bootstrap for this assignment. This landing page will lay the groundwork for a more comprehensive website developed throughout the week.
+
+### Day 2
+
+Develop a gallery page for the Pet Adoption website that you started on Day 1. This gallery page will display images of pets available for adoption, each with a descriptive caption. The objective is to reinforce your Flexbox skills and further your understanding of responsive web design, without relying on frameworks like Bootstrap.
+
+### Day 3
+
+Create a dashboard page for the Pet Adoption website, utilizing CSS Grid to structure the page layout. This dashboard will feature various sections including new arrivals, and will use grid template areas for an organized layout. This assignment will deepen your understanding of CSS Grid and responsive design.
+
+### Day 4
+
+Enhance the dashboard of your Pet Adoption website by adding responsive design features using media queries and incorporating basic CSS animations. This assignment aims to solidify your understanding of responsive web design and CSS animations.
+
+### Day 5
+
+Refine the splash page of your Pet Adoption website by adding a visually appealing background image and incorporating keyframe animation to the call to action (CTA) button. This assignment is designed to strengthen your skills in creating aesthetically pleasing and interactive web pages using CSS.
+
 ## Wireframe
 
 This is my plan for the landing page of this website using only HTML and CSS. This wireframe was created on Canva.com.
