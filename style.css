@@ -182,16 +182,10 @@ a > i {
 a > i:hover {
   color: yellow;
 }
-
 .copyrights {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
-  height: 60px;
-  width: 100vw;
   background-color: #2c6e49;
-  text-align: center;
-  padding: 20px;
-  color: #fefee3;
+  width: 100vw;
+  padding: 10px;
 }
 
 /*Dashboard css*/
@@ -268,23 +262,59 @@ a > i:hover {
 }
 .new-arrivals {
   display: flex;
-  flex-direction: column;
   text-align: center;
   gap: 10px;
   background-color: #fff;
   border-radius: 10px;
+  align-items: center;
+  box-shadow: 5px 4px 3px #2c6e49;
+}
+.new-arrivals:hover {
+  animation: animate-arrivals 1s linear;
+}
+@keyframes animate-arrivals {
+  0%,
+  50% {
+    transform: translateY(-4px);
+    transform: scale(1.1);
+    box-shadow: 8px 6px 3px #81b29a;
+  }
+  75%,
+  100% {
+    box-shadow: 5px 4px 3px #2c6e49;
+  }
+}
+.descriptions span {
+  color: orangered;
+  font-weight: 800;
 }
 .new-arrivals img {
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px 0 0 8px;
   width: 250px;
   height: 200px;
   object-fit: cover;
 }
 
+@media (999px < width < 1755px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: 65px auto auto auto 200px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "sidebar main  main"
+      "sidebar main  main"
+      "sidebar main  main"
+      "footer footer footer";
+  }
+  .arrivals-container {
+    margin-bottom: 20px;
+  }
+}
 @media (width < 1000px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 65px 100vh 75vh 200px;
+    grid-template-rows: 65px auto auto 200px;
     grid-template-columns: 200px 1fr 1fr;
     grid-template-areas:
       "header header header"
@@ -292,11 +322,14 @@ a > i:hover {
       "sidebar main  main"
       "footer footer footer";
   }
+  .arrivals-container {
+    margin-bottom: 20px;
+  }
 }
 @media (width < 700px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 65px 1fr 90vh 200px;
+    grid-template-rows: 65px 1fr auto 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
@@ -304,11 +337,16 @@ a > i:hover {
       "main"
       "footer";
   }
-  #arrivals-title {
-    display: none;
+  #white-cat {
+    width: 200px;
   }
-  .arrivals-container {
-    display: none;
+  .new-arrivals img {
+    border-radius: 8px 8px 0 0;
+  }
+  .new-arrivals {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
   }
   .sidebar {
     border-bottom: #2c6e49 2px solid;
@@ -320,25 +358,13 @@ a > i:hover {
 @media (width < 500px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 80px 1fr 100vh 200px;
+    grid-template-rows: 80px 1fr auto 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
       "sidebar"
       "main"
       "footer";
-  }
-  #arrivals-title {
-    display: none;
-  }
-  .arrivals-container {
-    display: none;
-  }
-  .sidebar {
-    border-bottom: #2c6e49 2px solid;
-  }
-  .main {
-    margin-top: 10px;
   }
   .nav-container {
     height: 75px;
@@ -352,7 +378,7 @@ a > i:hover {
 @media (width < 400px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 80px 1fr 100vh 200px;
+    grid-template-rows: 80px 1fr auto 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
@@ -360,26 +386,24 @@ a > i:hover {
       "main"
       "footer";
   }
-  #arrivals-title {
-    display: none;
-  }
-  .arrivals-container {
-    display: none;
-  }
-  .sidebar {
-    border-bottom: #2c6e49 2px solid;
-  }
-  .main {
-    margin-top: 10px;
-  }
   .footer {
     width: 100vw;
   }
 }
-@media (height < 800px) {
+@media (width < 350px) {
+  .footer-container {
+    height: 50vh;
+  }
+  .footer-items {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*@media (height < 800px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 65px 100vh 75vh 200px;
+    grid-template-rows: 65px auto auto 200px;
     grid-template-columns: 200px 1fr 1fr;
     grid-template-areas:
       "header header header"
@@ -391,7 +415,7 @@ a > i:hover {
 @media (height < 800px) and (width < 400px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 80px 1fr 100vh 50vh 200px;
+    grid-template-rows: 80px 1fr auto auto 200px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
@@ -410,7 +434,7 @@ a > i:hover {
 @media (height > 1000px) and (width > 700px) {
   .grid-container {
     display: grid;
-    grid-template-rows: 65px 100vh 1fr 200px;
+    grid-template-rows: 65px auto 1fr 200px;
     grid-template-columns: 200px 1fr 1fr;
     grid-template-areas:
       "header header header"
@@ -418,4 +442,4 @@ a > i:hover {
       "sidebar main  main"
       "footer footer footer";
   }
-}
+}*/
