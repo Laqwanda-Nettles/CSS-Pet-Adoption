@@ -194,7 +194,32 @@ nav a:hover {
   text-decoration: none;
   color: black;
 }
-
+.programs {
+  display: flex;
+  background-color: #a6dce5;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.program-items img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+.program-items h2 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 10px;
+}
+.program-items p {
+  margin-bottom: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /*css for browse.html*/
 #gallery-header {
   text-align: center;
