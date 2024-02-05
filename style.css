@@ -13,9 +13,6 @@ svg {
 body {
   background-color: #f4f1de;
 }
-#landing-main {
-  height: 90vh;
-}
 
 #company-name {
   font-size: 25px;
@@ -49,7 +46,7 @@ nav a:hover {
 /*Hero Image*/
 .background-container {
   width: 100%;
-  height: 60%;
+  height: 80%;
   color: white;
   overflow: auto;
   margin-bottom: 20px;
@@ -139,19 +136,22 @@ nav a:hover {
 }
 .mission-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px;
-  height: 300px;
+  margin: 20px;
   width: 100%;
-  gap: 20px;
+}
+#section-header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-shadow: #ff5733 1px 1px 1px;
+  color: black;
 }
 .mission-message {
-  background-color: lightcyan;
-  border: #0055ff 3px solid;
+  background-color: #e0e0d0;
   padding: 15px;
-  width: 600px;
-  height: 60%;
+  width: 80%;
   overflow: auto;
 }
 #mission-heading {
@@ -165,10 +165,36 @@ nav a:hover {
   font-size: 18px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.mission-img {
-  width: 300px;
-  margin-bottom: 15px;
+#mission-cta {
+  border: #fff 2px solid;
+  border-radius: 5px;
+  background-color: #ff5733;
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: cornflowerblue 2px 2px 1px;
+  padding: 5px;
 }
+#mission-cta:hover {
+  animation: animatebtn 1s ease-in-out;
+}
+@keyframes animatebtn {
+  0%,
+  50% {
+    background-color: #ffb243;
+    box-shadow: skyblue 3px 3px 2px;
+    transform: translateY(2px);
+  }
+  100% {
+    background-color: darkorange;
+    box-shadow: royalblue 2px 2px 1px;
+  }
+}
+#mission-cta a {
+  text-decoration: none;
+  color: black;
+}
+
 /*css for browse.html*/
 #gallery-header {
   text-align: center;
